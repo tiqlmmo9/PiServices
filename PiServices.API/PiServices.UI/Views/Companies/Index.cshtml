@@ -1,0 +1,70 @@
+﻿@model PiServices.UI.RequestFeatures.PagedList<PiServices.UI.Models.Company>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<form asp-action="Index" method="get">
+    <p>
+        <input type="text" name="searchTerm" />
+        <button type="submit">Search</button>
+    </p>
+</form>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Country
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <ul class="pagination">
+        @for (var i = 1; i <= Model.MetaData.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.MetaData.CurrentPage ? "active" : "")">
+                <a asp-route-pageNumber="@i" asp-route-searchTerm="@ViewData["SearchTerm"]"class="page-link"
+                  >@i</a>
+            </li>
+        }
+    </ul>
+</div>

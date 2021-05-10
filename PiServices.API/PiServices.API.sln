@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiServices.API", "PiServices.API\PiServices.API.csproj", "{0FF0F780-E096-4CB2-A6FF-7D957C6AAFDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{4C6C2A35-7FB9-4D9C-B1A2-53A94FE64AFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{D71D205E-4291-4C95-8B7A-CB8360E493A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{EF57F892-823F-4168-A93E-73C55B383523}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{FAF3B631-6B46-4E49-BD59-EF1CE74B7527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiServices.UI", "PiServices.UI\PiServices.UI.csproj", "{2A106E45-6FB2-4CB9-816F-257FF492CC5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FF0F780-E096-4CB2-A6FF-7D957C6AAFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF0F780-E096-4CB2-A6FF-7D957C6AAFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF0F780-E096-4CB2-A6FF-7D957C6AAFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF0F780-E096-4CB2-A6FF-7D957C6AAFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6C2A35-7FB9-4D9C-B1A2-53A94FE64AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6C2A35-7FB9-4D9C-B1A2-53A94FE64AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6C2A35-7FB9-4D9C-B1A2-53A94FE64AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6C2A35-7FB9-4D9C-B1A2-53A94FE64AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71D205E-4291-4C95-8B7A-CB8360E493A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71D205E-4291-4C95-8B7A-CB8360E493A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71D205E-4291-4C95-8B7A-CB8360E493A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71D205E-4291-4C95-8B7A-CB8360E493A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF57F892-823F-4168-A93E-73C55B383523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF57F892-823F-4168-A93E-73C55B383523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF57F892-823F-4168-A93E-73C55B383523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF57F892-823F-4168-A93E-73C55B383523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF3B631-6B46-4E49-BD59-EF1CE74B7527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF3B631-6B46-4E49-BD59-EF1CE74B7527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF3B631-6B46-4E49-BD59-EF1CE74B7527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF3B631-6B46-4E49-BD59-EF1CE74B7527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A106E45-6FB2-4CB9-816F-257FF492CC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A106E45-6FB2-4CB9-816F-257FF492CC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A106E45-6FB2-4CB9-816F-257FF492CC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A106E45-6FB2-4CB9-816F-257FF492CC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B4AA9A3-62D4-4E64-A934-18F86D19C939}
+	EndGlobalSection
+EndGlobal
